@@ -1,0 +1,12 @@
+.questions { width: 100%; margin-top: 10px; border: 1px solid #aaa; }
+.questions .lheader { padding: 2px 4px; width: 200px; background: #ddd; border-right: 1px solid #aaa; }
+.questions .loption { padding:3px; padding-left: 10px; width: 350px; }
+.questions .rheader { padding: 2px 4px; border-left: 1px solid #aaa; border-right: 1px solid #aaa; width: 150px; background: #ddd; }
+.questions .roption { padding:3px; padding-left: 10px; width: 150px; }
+
+.questions .additional { border-top: 1px solid #aaa; padding: 5px; }
+.questions .additional .optionlabel { font-weight: bold; padding-right: 5px; }
+
+.optionlabel { width: 80px; }
+.optionBox { width: 170px; height: 20px; }
+.optionExtra {  }

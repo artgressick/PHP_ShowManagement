@@ -1,0 +1,188 @@
+@charset "UTF-8";
+/* CSS Document */
+html, body { height: 100%; }
+body,th,td { font-family: Arial, Verdana, sans-serif; font-size: 12px; }
+body { 
+	height:100%;
+	background: #fff;
+	color: #000; 
+	margin: 0;
+}
+
+.header-left { 
+	height:25px;
+	background: #999; 
+	border-bottom: 1px solid black; 
+	font-size: 16px; 
+	font-weight: bold; 
+	padding-left: 5px; 
+	white-space: nowrap; 
+	vertical-align: middle;
+}
+.header-right { 
+	height:25px;
+	background: #999; 
+	border-bottom: 1px solid black; 
+	font-size: 14px; 
+	font-weight: bold; 
+	padding-right: 5px; 
+	text-align: right; 
+	white-space: nowrap; 
+	vertical-align: middle;
+}
+
+.frame { width: 100%; height: 100%; margin: 0; padding: 0; }
+.frame .topbar { background: #6699cc; }
+.frame .topbar .logo { width: 175px; height: 60px; vertical-align: middle; }
+.frame .topbar .innertop td { width: 100%; color: white; font-size: 10px; padding: 0 10px; }
+.frame .datetime { width: 175px; height: 20px; font-size: 10px; text-align: center; vertical-align: middle; background: #000; color: #EEEF4A; }
+
+.frame .buttons .buttonmenu { height: 20px; }
+.frame .buttons .buttonmenu td { padding: 0 15px; border-right: 1px solid #8FC2FF; font-size: 10px; vertical-align: middle; background: black; color: white; white-space:nowrap; }
+.frame .buttons .buttonmenu a { color: white; text-decoration: none; }
+.frame .buttons .buttonmenu .active { background: #f5f5f5; }
+.frame .buttons .buttonmenu .active a { color: black; }
+.frame .buttons .buttonmenu a:hover { text-decoration: underline; }
+.frame .buttons .buttonmenu .right { width: 100%; border-right: none; }
+
+.frame .graysplitter { background: #f5f5f5; height: 6px; }
+
+.frame .lefttoolbar { height: 100%; width: 175px; vertical-align: top; background: #f5f5f5; }
+.frame .maincontent { width: 100%; height: 100%; vertical-align: top; border: 1px solid black; border-right: 0; }
+.content { padding: 10px; }
+
+.frame .bottomlogo { height: 50px; text-align: center; background: #f5f5f5; }
+.frame .disclaimer { width: 100%; height: 50px; font-size: 10px; text-align: center; background: #f5f5f5; }
+
+.frame .buttons .buttonmenu { height: 20px; }
+.frame .buttons .buttonmenu td { padding: 0 15px; border-right: 1px solid #8FC2FF; font-size: 10px; vertical-align: middle; background: black; color: white; white-space:nowrap; }
+.frame .buttons .buttonmenu a { color: white; text-decoration: none; }
+.frame .buttons .buttonmenu .active { background: #f5f5f5; }
+.frame .buttons .buttonmenu .active a { color: black; }
+.frame .buttons .buttonmenu a:hover { text-decoration: underline; }
+.frame .buttons .buttonmenu .right { width: 100%; border-right: none; }
+
+.button	
+{	
+   /* Set a button to be a block so its height and width can be adjusted */
+	display: block;		    
+	
+	/* Use the highest button height to ensure that text will vertically align on all buttons */
+	line-height: 46px;	 
+	
+	/* A button will expand to the width of its parent cell if no width is specified */
+	width: 200px;
+	
+	font-size: 20px;
+	font-weight: bold;
+	font-family: Helvetica, sans-serif;
+	color: #fff;
+	
+	text-decoration: none;
+	text-align: center;
+}
+
+
+ /*  Builds a button using a 29x46 image */
+.blue
+{
+	margin: 3px auto;
+	color: #fff;
+	 /*  Put a 1 pixel blur black shadow below the button's text */
+	text-shadow: #000 0px 1px 1px;
+	
+	/* The right and left borders are 14 pixels wide  */
+	border-width: 0px 14px 0px 14px;	   
+	
+	
+	/* The leftButton image is split into three. Both left and right sides are 14 pixels wide.  */
+	/* The remaining 1 pixel is used for the middle part of the image.	 */
+	/* The left and right sides will remain fixed while the middle part is scaling horizontally.  */
+	-webkit-border-image: url(../../images/blueButton.png) 0 7 0 7;	
+}
+
+.wrapper {
+	height:100%;
+	vertical-align: top;
+}
+
+.mobile_list {
+	margin:0;
+	padding:0;
+}
+
+.mobile_list li {
+    position: relative;
+    margin: 0;
+    border-bottom: 1px solid #E0E0E0;
+    padding: 8px 0 8px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    list-style: none;
+}
+.mobile_list li a {
+    display: block;
+    margin: -8px 0 -8px -10px;
+    padding: 8px 32px 8px 10px;
+    text-decoration: none;
+    color: inherit;
+    background: url(../../images/listArrow.png) no-repeat right center;
+}
+
+.ErrorMessage { background: #FFBFC5; color: #601319; border-left: 3px solid #601319; padding: 2px 4px; margin: 2px 0; }
+.ErrorMessage A { color: black; }
+.InfoMessage { background-color: #B3EFB5; color: #144F16; border-left: 3px solid #144F16; padding: 2px 4px; margin:0 0 4px; }
+.InfoMessage A { color: black; }
+
+.innerbody {
+	width: 100%;
+	overflow: auto;
+	border:1px solid #b6b6b6; 
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+}
+
+.colHeader {
+	 background:#DDD; 
+	 font-size:14px; 
+	 font-weight:bold; 
+	 padding:3px; 
+}
+
+/* This is the forms section all CSS that affect forms go in this area.*/
+.FormName { font-size: 11px; line-height: 14px; font-weight: bold; margin: 3px 0 0 2px; }
+.FormField { margin-bottom: 5px; }
+.FormDisplay { margin: 0 0 5px 5px; font-size: 12px; }
+.FormRequired { font-size: 11px; line-height: 16px; color: #666; }
+.FormButtons { padding-top: 10px; }
+
+.List { border: 1px solid #999; padding: 0; margin: 0; width:100%; }
+.List th { font-size: 10px; background: url(../../components/list/list_head.gif) repeat-x; height: 13px; border-bottom: 1px solid #999; padding: 3px 5px; font-weight: bold; text-align: left; white-space: nowrap; }
+.List td { padding: 0 5px; font-size: 11px; cursor: pointer; }
+.List .nocursor { cursor:auto; }
+.List th a { color: #333; text-decoration: none; }
+.List td a { color: black; text-decoration: none; }
+.List th.ListHeadSortOn { font-size: 10px; background: url(../../components/list/list_head_sortedby.gif); height: 13px; border-bottom: 1px solid #999; padding: 3px 5px; font-weight: bold; }
+.List .ListOdd { font-size: 10px; background-color: #FFF; line-height: 20px; height: 20px; padding-left: 5px; }
+.List .ListEven { font-size: 10px; background-color: #EEE; line-height: 20px; height: 20px; padding-left: 5px; }
+
+.List .ListHeader { font-size: 10px; background-color: #999; color:white; line-height: 20px; height: 20px; padding-left: 5px; }
+
+.List .options { width: 10px; white-space: nowrap; text-align: center; vertical-align:middle; } 
+.List .options a { text-decoration: underline; color: green; } 
+
+.List .options a { text-decoration: underline; color: green; } 
+
+.errMessage { width:100%; padding:1px 0 1px 0; margin:0;}
+.errMessage .icon {  }
+.errMessage .msg { background: #FFBFC5; text-align:left; vertical-align:middle; padding:3px; }
+.infMessage { width:100%; padding:1px 0 2px 0; margin:0;}
+.infMessage .icon {  }
+.infMessage .msg { background: #B3EFB5; text-align:left; vertical-align:middle; padding:3px; }
+

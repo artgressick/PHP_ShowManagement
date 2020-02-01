@@ -1,0 +1,213 @@
+/* CSS Document */
+html, body { height: 100%; }
+body,th,td { font-family: Arial, Verdana, sans-serif; font-size: 12px; }
+body { 
+	height:100%;
+	background: #fff;
+	color: #000; 
+	margin: 0;
+}
+.mainbody {
+	background: url(../images/background.gif) repeat-x top;
+}
+ul,ol { list-style: none; margin: 0; padding: 0; }
+
+a { text-decoration: none; color: #333; font-weight: bold; }
+
+img { border: 0; padding: 0; }
+form { margin: 0; padding: 0; }
+input { margin: 0; }
+
+.body_frame { width: 1000px; height: 100%; padding: 0; }
+.body_frame .body_logo { height:41px; }
+.body_frame .body_info { height:100px; background: url(../images/center_bg.gif) no-repeat center; }
+.body_frame .body_spacer { height:10px; }
+.body_frame .body_nav { height:36px; }
+.body_frame .body_inner { height:100%; padding-top:10px; vertical-align: top; }
+.body_frame .body_footer { height: 50px; text-align: center; font-size:11px; }
+.div_body_inner { overflow: auto; }
+
+.nav_bar { width:100%; height:36px; background: url(../images/nav-bar-middle.gif) repeat-x; }
+.nav_bar .nbleft { width:44px; background: url(../images/nav-bar-left.gif) no-repeat; cursor:pointer; }
+.nav_bar .nbdiv { width:12px; background: url(../images/nav-bar-div.gif) no-repeat; }
+.nav_bar .nbmiddle { width:10px; padding:0 5px; font-weight: bold; color: #878787; }
+.nav_bar .nbfill {  }
+.nav_bar .nbright { width:6px; background: url(../images/nav-bar-right.gif) no-repeat; }
+
+.information_section { vertical-align: top; color:white; padding-top: 5px; }
+.information_section a { color:white; }
+
+.page_info { width:100%; margin-bottom: 10px; }
+.page_info .headleft { width:0; height:27px; background: url(../images/db_left.gif) no-repeat; }
+.page_info .headmiddle { width:100%; height:27px; background: url(../images/db_middle.gif) repeat-x; font-weight:bold; font-size:13px; color:white; }
+.page_info .headright { width:0; height:27px; background: url(../images/db_right.gif) no-repeat; }
+.page_info .body { 
+	border:1px solid #b6b6b6; 
+	padding:10px;
+}
+
+.innerbody {
+	width: 980px;
+	overflow: auto;
+	padding:10px;
+	border:1px solid #b6b6b6; 
+}
+
+.subsection {
+	width: 100%;
+	border:1px solid #b6b6b6; 
+}
+
+
+.user_information {
+	text-align: right;
+	vertical-align: top;
+	padding-top: 5px;
+	color: white;
+	font-weight: bold;
+}
+
+/* These are for displaying the error and information messages on the screen. */
+.ErrorMessage { background: #FFBFC5; color: #601319; border-left: 3px solid #601319; padding: 2px 4px; margin: 2px 0; }
+.ErrorMessage A { color: black; }
+.InfoMessage { background-color: #B3EFB5; color: #144F16; border-left: 3px solid #144F16; padding: 2px 4px; margin:0 0 4px; }
+.InfoMessage A { color: black; }
+
+/* These are for displaying the error and information messages on the screen. */
+.errMessage { width:100%; padding:1px 0 1px 0; margin:0;}
+.errMessage .icon { background: url(../images/error_alert.png) no-repeat;height:20px; width:32px; padding:0; margin:0; }
+.errMessage .msg { background: #FFBFC5; text-align:left; vertical-align:middle; white-space:nowrap; }
+.infMessage { width:100%; padding:1px 0 2px 0; margin:0;}
+.infMessage .icon { background: url(../images/success_check.png) no-repeat;height:20px; width:32px; padding:0; margin:0; }
+.infMessage .msg { background: #B3EFB5; text-align:left; vertical-align:middle; white-space:nowrap; }
+
+/* Basic formatting for the text, select, textarea and checkbox type fields */
+input, select, button { vertical-align: baseline; border: 1px solid #999; }
+input, select, textarea { font-size: 11px; border: 1px solid #999; }
+input[type=checkbox] { vertical-align: middle; }
+
+.inline { padding:5px 0; }
+.inline .question { font-weight: bold; }
+
+/* This is the forms section all CSS that affect forms go in this area.*/
+.FormName { font-size: 11px; line-height: 14px; font-weight: bold; margin: 3px 0 0 2px; }
+.FormField { margin-bottom: 5px; }
+.FormDisplay { margin: 0 0 5px 5px; font-size: 12px; }
+.FormRequired { font-size: 11px; line-height: 16px; color: #666; }
+.FormButtons { padding-top: 10px; }
+.colHeader { background:#DDD; font-size:14px; font-weight:bold; padding:3px; margin-top:5px; width:250px; }
+.half_colHeader { background:#DDD; font-size:14px; font-weight:bold; padding:3px; margin-top:5px; width:474px; }
+.full_colHeader { background:#DDD; font-size:14px; font-weight:bold; padding:3px; margin-top:5px; width:980px; }
+.colHeader2 { background:#DDD; font-size:14px; font-weight:bold; padding:3px; margin-top:5px; width:970px; }
+.colHeader3 { background:#DDD; font-size:14px; font-weight:bold; padding:3px; width:970px; }
+.colHeader4 { background:#DDD; font-size:14px; font-weight:bold; padding:3px; }
+/* This is the css for the left side information */
+.leftTitle { font-size: 14px; font-weight: bold; margin: 10px; margin-bottom: 0; padding-bottom: 3px; width: 155px; border-bottom: 1px solid black; }
+.leftContent { width: 155px; padding: 2px 10px; margin-bottom: 10px; font-size: 11px; }
+.leftContent a { text-decoration: none; line-height: 16px; }
+.leftContent a:hover { text-decoration: underline; }
+.leftContent .active { margin-left: -10px; padding-left: 10px; width: 165px; background: black; }
+.leftContent .active a { color: white; }
+
+/* Generic headers to replace the h1,h2...h6 series */
+.header1 { font-size: 20px; font-weight: bold; }
+.header2 { font-size: 16px; font-weight: bold; }
+.h2gray { font-size: 16px; color: gray; }
+.header3 { font-size: 14px; font-weight: bold; }
+.h3gray { font-size: 16px; color: gray; }
+.header4 { font-size: 12px; font-weight: bold; }
+.h4gray { font-size: 16px; color: gray; }
+.header5 { font-size: 10px; font-weight: bold; }
+.header6 { font-size: 8px; font-weight: bold; }
+
+
+/* List Page CSS */
+.filterbar { padding:5px;vertical-align:middle;text-align:right;font-weight:normal;font-size:10px;background: #CCC; border:1px solid #999; border-bottom:none; font-weight:bold; }
+
+.filter2 { margin: 0; padding: 0px; width: 100%; }
+.filter2 td { vertical-align: middle; background: #ffccaa; color: #000; padding: 2px 4px; white-space: nowrap; }
+.filter2 .filter2Right { text-align: right; width: 100%; }
+.resultsShown { font-size: 12px; color: #666; }
+
+/* Instructions for the add and edit pages */
+.instructions { background: #6699cc; color: #fff; padding: 2px 4px; }
+.instructions800 { background: #6699cc; color: #fff; padding: 3px 5px; width: 800px; }
+
+/* overlays */
+.warning { text-align: center; border: 1px solid #666; width: 400px; margin: auto; background: #fff; margin-top: 200px; display: block; }
+.warning .red { background: #6F0000; color: #fff; padding: 10px; font-size: 16px; }
+.warning .body { padding: 15px 10px; }
+
+.notice { text-align: center; border: 1px solid #666; width: 400px; margin: auto; background: #fff; margin-top: 200px; display: block; }
+.notice .green { background: #A4EFAC; color: #000; padding: 10px; font-size: 16px; }
+.notice .body { padding: 15px 10px; }
+
+.normal { display: block; }
+.overlaypage { display: none; text-align: center; z-index: 10; }
+/* .overlaypage .gray { position: absolute; top: 0; left: 0; height: 100%; width: 100%; opacity: .5; filter: alpha(opacity=50); background: #333; z-index: 20; } */
+.overlaypage .gray { position: absolute; top: 0; left: 0; height: 100%; width: 100%; background: url(../images/greyoverlay.png) repeat; }
+.overlaypage .message { position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 30; }
+
+.twoCol { width: 100%; }
+.twoCol td { vertical-align: top; }
+.twoCol td.tcleft { width: 50%; text-align:left; }
+.twoCol td.tcright { width: 50%; text-align:left; }
+.twoCol .tcgutter { padding: 0 20px; }
+
+.tabs { margin-left:10px;  }
+.tabs .space { width:2px; }
+.tabs .tab { 
+	cursor: pointer;
+	text-align: center;
+	background: #d3d3d3;
+	color: black;
+	font-weight: bold;
+	padding: 5px;
+	border:1px solid #b6b6b6; border-bottom: none;
+ }
+.tabs .tab:hover { 
+	cursor: pointer;
+	background: #FFFFFF;
+	color: black;
+	font-weight: bold;
+	padding: 5px;
+	border:1px solid #b6b6b6; border-bottom: none;
+ }
+
+.tabs .current { 
+	cursor: pointer;
+	background: #666666;
+	color: white;
+	padding: 5px;
+	border:1px solid #b6b6b6; border-bottom: none;
+ }
+
+.daycal { border-top:1px solid #b6b6b6; border-right:1px solid #b6b6b6; table-layout: fixed; }
+.daycal td { border-left:1px solid #EEEEEE; border-bottom:1px solid #b6b6b6; padding:5px; white-space: nowrap; }
+.daycal .sessionitem { color: white; font-size:11px; font-weight: bold; }
+.daycal .hour { border-left:1px solid #b6b6b6; border-bottom:1px solid #b6b6b6; padding:5px; white-space: nowrap; }
+
+.popup { 
+	background: white;
+	padding:10px;
+	position: absolute;
+	border:1px solid #b6b6b6; 
+}
+
+.popup .title { vertical-align:top; font-size: 11px; font-weight: bold; width:50px; white-space: nowrap; }
+.popup .title div { white-space: nowrap; }
+.popup .data { vertical-align:top; font-size:11px; padding-left:10px; }
+.popup .sessiondatestimes { border-top:1px solid #999; border-left:1px solid #999; width:100%; }
+.popup .sessiondatestimes td { text-align:center; white-space: nowrap; border-bottom:1px solid #999; border-right: 1px solid #999; }
+.popup .sessiondatestimes th { text-align:center; white-space: nowrap; border-bottom:1px solid #999; border-right: 1px solid #999; }
+
+.legend { 
+	margin-top:10px;
+	border:1px solid #999;
+}
+
+/* updates to fix IE css issues */
+
+.date_time_box { padding-right:6px; }
+.full_width { width:980px; }
+.half_width { width:480px; }

@@ -1,0 +1,257 @@
+/* dynamic css menu */
+
+#header #primary_nav {
+    height: 25px;
+    padding-top: 68px;
+}
+
+/* Top level List item */ 
+#primary_nav li.levelone, #primary_nav li.levelone_short {
+    position: relative;
+    display: inline;
+    float: left;
+}
+
+/* Top level Links */ 
+#primary_nav li.levelone a, #primary_nav li.levelone_short a {
+    float: left;
+    display:block;
+    color: #ffffff;
+    font-size: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+/* sub  level Links */ 
+#primary_nav li.levelone:hover>a, #primary_nav li.levelone_short:hover>a {
+    color: #414141;
+    font-size: 12px;
+    margin-right: -1px;
+    margin-left: -1px;
+    margin-top: -1px;
+    margin-bottom: 0;
+    background-color: white;
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    border-color: #dddddd;
+    border-style: solid;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    border-bottom: 10px solid #fff;
+
+}
+
+/* handle rounded corners rollover */
+#primary_nav li:first-child:hover {
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    background-color: #e9eff2;
+	z-index: 500;
+}
+
+#primary_nav li.levelone li:last-child:hover {
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    background-color: #e9eff2;
+	z-index: 500;
+}
+
+#primary_nav li.levelone li.subsection li:hover {
+    background-color: #e9eff2;
+	z-index: 500;
+}
+
+#primary_nav li.levelone li.subsection li:last-child:hover {
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    background-color: #e9eff2;
+	z-index: 500;
+}
+
+#primary_nav li.last a {
+	border-right: 0;
+}
+
+/* second-level menu lists */
+#primary_nav li ul {
+    position: absolute;
+    display: block;
+    background-color: white;
+    margin-left: -1px;
+    -webkit-box-shadow: 1px 2px 2px #A9A9A9;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+	border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    font-size: 11px;
+    margin-top: 28px;
+    width: 178px;
+    opacity: .99;
+    filter:alpha(opacity=99);
+    left: -999em;
+}
+
+
+/* 2nd level List items */ 
+#primary_nav li.levelone li, #primary_nav li.levelone_short li{
+    width:100%;
+    float: left;
+    border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 1px solid #dddddd;
+	margin: 0 0 0 0;
+	font-size: 11px;
+	background: none;
+}
+
+/* Handle last item rounded border for all sub list items (2-3 levels) */ 
+#primary_nav li.levelone li:last-child, #primary_nav li.levelone li.subsection li:last-child, #primary_nav li.levelone_short li:last-child, #primary_nav li.levelone_short li.subsection li:last-child{
+    width:100%;
+    float: left;
+    border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 0px;
+	margin: 0 0 0 0;
+	font-size: 11px;
+	background-color: none;
+}
+
+
+/* Sub level menu links style */
+
+#primary_nav li.levelone li a, #primary_nav li.levelone_short li a{
+    float: left;
+    display:block;
+    color: #ffffff;
+    font-size: 11px;
+    width:relative;
+    padding-left: 15px;
+    padding-bottom: 8px;
+    padding-right: 20px;
+    padding-top: 8px;
+    display: block;
+    color: #414141;
+    text-decoration: none;
+    border:none;
+    background-color: none;
+}
+
+#primary_nav li.levelone li.subsection li a, #primary_nav li.levelone_short li.subsection li a{
+    float: left;
+    display:block;
+    color: #ffffff;
+    font-size: 11px;
+    width:relative;
+    padding-left: 15px;
+    padding-bottom: 8px;
+    padding-right: 20px;
+    display: block;
+    color: #414141;
+    text-decoration: none;
+    border:none;
+}
+
+/* subsection arrow icon */
+#primary_nav li li.subsection {
+    background-position: 96% center;
+    background-repeat: no-repeat;
+    background-image: url(../images/arrow_topnav.png);
+}
+
+/* limit levelone_short 4th level display */
+
+#primary_nav li.levelone li.subsection li ul{
+    display:none;
+}
+
+/* end limit levelone_short 4th level  display */
+
+/* limit levelone_short 3rd level display */
+
+#primary_nav li.levelone_short li.subsection {
+    background-position: 96% center;
+    background-repeat: no-repeat;
+    background-image: none;
+}
+
+#primary_nav li.levelone_short li.subsection ul {
+    display:none;
+}
+
+/* end limit levelone_short 3rd level  display */
+
+#primary_nav li li:hover {
+	border-left: 0;
+	border-right: 0;
+    background-color: #e9eff2;
+	z-index: 500;
+}
+
+/* 3rd level menus*/
+#primary_nav li.levelone ul ul, #primary_nav li.levelone_short ul ul  {
+    position: absolute;
+    display: block;
+    background-color: none;
+    margin: 0 0 0 178px;
+    -webkit-box-shadow: 1px 2px 2px #A9A9A9;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+	border: 1px solid #dddddd;    
+    font-size: 11px;
+    opacity: .99;
+    filter:alpha(opacity=99);
+    left: -999em;
+}
+
+/* 3rd level List items */ 
+#primary_nav li.levelone li.subsection li, #primary_nav li.leveone_short li.subsection li {
+    float: left;
+    border: 0px;
+    border-right: 0px;
+    border-top: 0px;
+	border-bottom: 1px solid #dddddd;
+    padding:0px
+    margin: 0 0 0 0;
+    font-size: 11px;
+    background: none;
+}
+
+#primary_nav li:hover ul ul, #primary_nav li:hover ul ul ul{
+	left: -999em;
+}
+
+#primary_nav li:hover ul, #primary_nav li li:hover ul, #primary_nav li li li:hover ul { 
+	left: auto;
+	z-index: 500;
+}
+
+#primary_nav li ul ul ul {
+	margin: 0 0 0 14.1em;
+}
